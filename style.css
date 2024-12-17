@@ -344,6 +344,7 @@ HEADER SERVICES
 
     .header__service {
         width: 300px;
+        background-color: rgba(6, 136, 19, 0.7);
     }
 
     .header__service--img {
