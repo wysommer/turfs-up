@@ -299,7 +299,15 @@ HEADER SERVICES
 @media (max-width: 768px) {
     .logo {
         width: 100%;
-        max-width: 200px;
+        max-width: 180px;
+    }
+
+    .phone__number {
+        font-size: 14px;
+    }
+
+    .phone__number:hover {
+        transform: none;
     }
     
     header {
