@@ -17,6 +17,96 @@
     margin: 0 auto;
 }
 
+/* 
+
+MOBILE NAV
+
+*/
+
+.menu__btn {
+    display: none;
+    font-size: 24px;
+    margin-top: 24px;
+    margin-right: 12px;
+}
+
+.fa-x {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.mobile__menu {
+    display: none;
+    height: 100vh;
+    background-color: rgb(22, 152, 102);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: slide-in 1s ease;
+    overflow: hidden;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.mobile-nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-nav__li {
+    list-style: none;
+    margin: 12px 0;
+}
+
+.mobile-nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.mobile__phone--li {
+    margin-top: 24px;
+}
+
+.open-menu .mobile__menu {
+    display: flex;
+}
+
+.open-menu nav, .open-menu .top__bar {
+    display: none;
+}
+
+.close-menu .mobile__menu {
+    animation: slide-out 1s ease;
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* 
+
+NAV
+
+*/
+
 .top__bar {
     background-color: green;
     width: 100%;
@@ -86,15 +176,168 @@ HEADER
 
 */
 
+header {
+    background-image: url(./assets/background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
 .header__row {
     display: flex;
+    margin-top: 80px;
 }
 
 .header__text {
     width: 50%;
-    padding: 0 24px 0 0;
+    padding: 24px;
+    margin-right: 24px;
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.header__title {
+    color: green;
+}
+
+.header__subtitle {
+    padding: 12px 0;
 }
 
 .video {
     width: 50%;
 }
+
+/* 
+
+HEADER SERVICES
+
+*/
+
+.header__services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.header__services--title {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 12px;
+    border-radius: 24px;
+    color: green;
+}
+
+.header__services--list {
+    display: flex;
+    justify-content: center;
+}
+
+.header__service {
+    list-style: none;
+    margin: 24px;
+    padding: 24px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 24px;
+}
+
+.header__service--img {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
+.header__service--title {
+    text-align: center;
+    padding: 8px 0;
+}
+
+.header__service--para {
+    font-size: 14px;
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+}
+
+@media (max-width: 1470px) {
+    header {
+        background-size: 150%;
+    }
+}
+
+@media (max-width: 1250px) {
+    nav {
+        justify-content: space-between;
+        margin: 12px 0;
+    }
+
+    header {
+        background-size: 250%;
+    }
+
+    .header__services--list {
+        flex-wrap: wrap;
+    }
+
+    .header__service {
+        width: calc(100% / 4);
+    }
+
+    .menu__btn {
+        display: flex;
+    }
+
+    .nav__list {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    header {
+        background-size: 300%;
+    }
+
+    .header__row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__text {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 48px;
+        text-align: center;
+    }
+    
+    .header__services--title {
+        font-size: 21px;
+    }
+
+    .header__services--list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__service {
+        width: 300px;
+    }
+
+    .header__service--img {
+        width: 100px;
+        height: 100px;
+    }
+    .header__service--para {
+        max-width: 240px;
+    }
+}
+
+

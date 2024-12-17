@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Turf's Up LLC</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
     <script
       src="https://kit.fontawesome.com/c8fc247de9.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <section>
+    <section id="landing">
       <div class="top__bar"></div>
       <nav>
         <img class="logo" src="./assets/logo.png" alt="logo" />
@@ -32,23 +33,114 @@
         <a href="tel:631-702-5932" class="phone__number"
           ><i class="fa-solid fa-phone-volume"></i> 631-702-5932</a
         >
+        <i class="fa-solid fa-bars menu__btn" onclick="openMenu()"></i>
       </nav>
+      <div class="mobile__menu">
+        <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__li">
+            <a href="#" class="mobile-nav__link">About</a>
+          </li>
+          <li class="mobile-nav__li">
+            <a href="#" class="mobile-nav__link">Services</a>
+          </li>
+          <li class="mobile-nav__li">
+            <a href="#" class="mobile-nav__link">Portfolio</a>
+          </li>
+          <li class="mobile-nav__li">
+            <a href="#" class="mobile-nav__link">Contact Us</a>
+          </li>
+          <li class="mobile-nav__li mobile__phone--li">
+            <a href="tel:631-702-5932" class="phone__number mobile__phone"><i class="fa-solid fa-phone-volume"></i> 631-702-5932</a>
+          </li>
+        </ul>
+      </div>
       <header>
         <div class="container">
-            <div class="row header__row">
-                <div class="header__text">
-                    <h1 class="header__title">Welcome to Turf's Up LLC</h1>
-                    <h3 class="header__subtitle">Your go to long island landscaper</h3>
-                    <p class="header__para">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quae
-                      expedita aliquam magnam animi vero veritatis quidem eos qui dolorem
-                      velit in voluptas modi maxime cupiditate rerum, vel eum repudiandae?
-                    </p>
-                </div>
-                <video class="video" controls>
-                    <source src="./assets/turfsup.MP4" type="video/MP4">
-                </video>
+          <div class="row header__row">
+            <div class="header__text">
+              <h1 class="header__title">Welcome to Turf's Up LLC</h1>
+              <h3 class="header__subtitle">
+                Your go to long island landscaper
+              </h3>
+              <p class="header__para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                quae expedita aliquam magnam animi vero veritatis quidem eos qui
+                dolorem velit in voluptas modi maxime cupiditate rerum, vel eum
+                repudiandae?
+              </p>
             </div>
+            <video class="video" src="./assets/video.mov" type="video/mov" controls>
+              the video player is not supported on your browser
+            </video>
+          </div>
+        </div>
+        <div class="header__services">
+          <h2 class="header__services--title">
+            We Offer The Following Services:
+          </h2>
+          <ul class="header__services--list">
+            <li class="header__service">
+              <img
+                src="./assets/flower.jpg"
+                alt="service"
+                class="header__service--img"
+              />
+              <h4 class="header__service--title">Landscaping</h4>
+              <p class="header__service--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione, sed!
+              </p>
+            </li>
+            <li class="header__service">
+              <img
+                src="./assets/lawn.jpg"
+                alt="service"
+                class="header__service--img"
+              />
+              <h4 class="header__service--title">Lawn Care</h4>
+              <p class="header__service--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione, sed!
+              </p>
+            </li>
+            <li class="header__service">
+              <img
+                src="./assets/masonry.jpg"
+                alt="service"
+                class="header__service--img"
+              />
+              <h4 class="header__service--title">Masonry</h4>
+              <p class="header__service--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione, sed!
+              </p>
+            </li>
+            <li class="header__service">
+              <img
+                src="./assets/irrigation.jpg"
+                alt="service"
+                class="header__service--img"
+              />
+              <h4 class="header__service--title">Irrigation</h4>
+              <p class="header__service--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione, sed!
+              </p>
+            </li>
+            <li class="header__service">
+              <img
+                src="./assets/maintenance.jpg"
+                alt="service"
+                class="header__service--img"
+              />
+              <h4 class="header__service--title">Maintenance</h4>
+              <p class="header__service--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione, sed!
+              </p>
+            </li>
+          </ul>
         </div>
       </header>
     </section>
