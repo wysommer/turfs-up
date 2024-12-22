@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c8fc247de9.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <section class="secondary__pages--background">
+        <div class="top__bar"></div>
+        <nav class="secondary__pages--nav">
+          <a href="./index.html">
+            <img class="logo" src="./assets/logo.png" alt="logo" />
+          </a>
+          <ul class="nav__list">
+            <li class="nav__li">
+              <a href="./services.html" class="nav__link">Services</a>
+            </li>
+            <li class="nav__li">
+              <a href="./gallery.html" class="nav__link">Gallery</a>
+            </li>
+            <li class="nav__li">
+              <a href="./contact.html" class="nav__link">Contact Us</a>
+            </li>
+          </ul>
+          <a href="tel:631-702-5932" class="phone__number"
+            ><i class="fa-solid fa-phone-volume"></i> 631-702-5932</a
+          >
+          <i class="fa-solid fa-bars menu__btn" onclick="openMenu()"></i>
+        </nav>
+        <div class="mobile__menu">
+          <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+          <ul class="mobile-nav__list">
+              <li class="mobile-nav__li">
+                <a href="./index.html" class="mobile-nav__link">Home</a>
+              </li>
+              <li class="mobile-nav__li">
+                <a href="./services.html" class="mobile-nav__link">Services</a>
+              </li>
+            <li class="mobile-nav__li">
+              <a href="./gallery.html" class="mobile-nav__link">Gallery</a>
+            </li>
+            <li class="mobile-nav__li">
+              <a href="./contact.html" class="mobile-nav__link">Contact Us</a>
+            </li>
+            <li class="mobile-nav__li mobile__phone--li">
+              <a href="tel:631-702-5932" class="phone__number mobile__phone"
+                ><i class="fa-solid fa-phone-volume"></i> 631-702-5932</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="secondary__pages--background">
+        <div class="container">
+          <div class="row contact__row">
+            <div class="contact__content">
+              <h1 class="contact__title">
+                Reach out to get more information on our landscaping services
+              </h1>
+              <div class="contact__info">
+                <p class="address">
+                  111 old country road
+                  <br>
+                  East Moriches, NY 11941
+                </p>
+                <div class="contact__info--details">
+                  <p class="email contact-info">email:
+                    <a href="mailto:info@turfsupllc.com" class="contact__email">info@turfsupllc.com</a>
+                  </p>
+                  <p class="phone contact-info">call:
+                    <a href="tel:6317025932" class="contact__phone">631-702-5932</a>
+                  </p>
+                </div>
+              </div>
+              <img src="./assets/background.png" alt="img" class="contact__img">
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="footer__content">
+              <a class="footer__logo" href="./index.html">
+                <img src="./assets/logo.png" alt="logo" class="footer__logo">
+              </a>
+              <ul class="footer__link--list">
+                <li class="footer__link--li">
+                  <a href="./index.html" class="footer__link">Home</a>
+                </li>
+                <li class="footer__link--li">
+                  <a href="./services.html" class="footer__link">Services</a>
+                </li>
+                <li class="footer__link--li">
+                  <a href="./gallery.html" class="footer__link">Gallery</a>
+                </li>
+                <li class="footer__link--li">
+                  <a href="./contact.html" class="footer__link">Contact Us</a>
+                </li>
+              </ul>
+              <div class="footer__names">
+                <p class="footer__copyright">2024 © Turf's Up, LLC</p>
+                <p class="footer__tag">site made by 
+                  <a class="footer__tag--link" href="https://www.written-art.com" target="_blank">written-art®</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
