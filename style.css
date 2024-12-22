@@ -26,8 +26,7 @@ MOBILE NAV
 .menu__btn {
     display: none;
     font-size: 24px;
-    margin-top: 24px;
-    margin-right: 12px;
+    margin: 24px 12px 0 12px;
 }
 
 .fa-x {
@@ -152,6 +151,7 @@ nav {
     color: green;
     cursor: alias;
 }
+
 
 /* 
 
